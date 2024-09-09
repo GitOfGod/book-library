@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>The Library of God</h1>
+    <div class="book-section">
+        
+    </div>
+
+    <dialog id="formDialog">
+        <form id="bookForm" action="#">
+            <h2>Add a Book</h2>
+            <label for="title">Title<span>*</span></label><br>
+            <input type="text" id="title" name="title" required><br>
+            <label for="author">Author<span>*</span>:</label><br>
+            <input type="text" id="author" name="author" required><br>
+            <label for="pages">Pages<span>*</span></label><br>
+            <input type="number" id="pages" name="pages" required><br>
+            <label for="haveRead">Have you read?<span>*</span></label><br>
+            <input type="radio" id="yes" name="read" value="Read">
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="read" value="Not read yet">
+            <label for="no">No</label><br>
+            <div class="formBtns">
+                <button id="closeForm" value="cancel" formmethod="dialog">Cancel</button>
+                <button id="confirmBtn" value="default">Confirm</button>
+            </div>
+            
+        </form>
+    </dialog>
+    <div class="createBook">
+        <button id="showDialog">NEW BOOK</button>
+    </div>
+</body>
+</html>
